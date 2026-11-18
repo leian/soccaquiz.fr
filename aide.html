@@ -26,12 +26,12 @@ form input:focus,form textarea:focus{outline:3px solid #d4a017;outline-offset:1p
 </head>
 <body><main>
 <h1><img src="logo-120.png" width="56" height="56" alt="" style="vertical-align:middle;border-radius:14px"> Aide de Socca<span style="color:#b3001b">Quiz</span></h1>
-<p>SoccaQuiz transforme une leçon photographiée en quiz de révision. Chaque famille a son propre site, rangé dans son compte Google, gratuitement. Tu ne trouves pas ta réponse ? <a href="#demande">Pose ta question</a> : SoccaQuiz te répond par mail.</p>
+<p>SoccaQuiz transforme une leçon que ton enfant a en photo en un petit jeu de questions pour réviser. Tout se passe dans ton propre compte Google (celui de ton adresse Gmail) : c'est gratuit, et personne d'autre que toi n'a accès aux quiz ni aux résultats. Cette page explique chaque étape simplement. Si tu restes bloqué, <a href="#demande">pose ta question en bas de la page</a> : SoccaQuiz te répond par mail.</p>
 
 <ul class="sommaire">
 <li><a href="#installer">Installer SoccaQuiz</a></li>
-<li><a href="#enfant">Le site de l'enfant</a></li>
-<li><a href="#creer">Créer un quiz</a></li>
+<li><a href="#enfant">Le site de ton enfant</a></li>
+<li><a href="#creer">Créer un quiz à partir d'une leçon</a></li>
 <li><a href="#resultats">Suivre les progrès</a></li>
 <li><a href="#plusieurs">Plusieurs enfants, deux parents</a></li>
 <li><a href="#maj">Mettre à jour</a></li>
@@ -42,103 +42,95 @@ form input:focus,form textarea:focus{outline:3px solid #d4a017;outline-offset:1p
 
 <div class="carte" id="installer">
 <h2>Installer SoccaQuiz</h2>
-<p>Il faut un compte Google (une adresse Gmail) pour le parent. L'enfant, lui, n'a besoin d'aucun compte. Compte environ 5 minutes, depuis un téléphone ou un ordinateur.</p>
+<p>Tu as besoin d'un compte Google, c'est-à-dire d'une adresse Gmail. Ton enfant, lui, n'a besoin d'aucun compte. L'installation prend environ 5 minutes, depuis un téléphone ou un ordinateur. Elle se fait une seule fois.</p>
 <ol>
-<li>Ouvre le lien de l'installateur, reçu dans le mail d'invitation.</li>
-<li><b>Une seule fois :</b> touche « Ouvrir la page Google », mets l'interrupteur <b>« API Google Apps Script »</b> sur <b>Activé</b>, puis reviens. C'est ce qui permet à l'installateur de créer le site dans ton compte.</li>
-<li>Google te demande d'<b>autoriser SoccaQuiz</b> : choisis ton compte, coche les autorisations, puis « Continuer ». Si l'écran « Google n'a pas validé cette application » apparaît, touche <b>Paramètres avancés</b>, puis <b>Accéder à SoccaQuiz</b>.</li>
-<li>Tape le prénom de l'enfant (facultatif) et choisis sa classe, puis touche <b>« Installer mon site »</b>. Attends une trentaine de secondes.</li>
-<li>Deux boutons apparaissent : <b>« Site de &lt;prénom&gt; »</b>, à donner à l'enfant, et <b>« Espace parent »</b>, pour toi. Mets-les en favori.</li>
-<li>À la première ouverture de l'espace parent, Google demande une dernière autorisation, pour <b>ton</b> site. Elle mentionne ton Drive parce que le site range les quiz et les résultats dans son propre dossier « SoccaQuiz » : il ne lit que ce dossier.</li>
+<li><b>Ouvre le lien de l'installateur.</b> Il se trouve dans le mail d'invitation que tu as reçu : touche le bouton « Installer SoccaQuiz ».</li>
+<li><b>Autorise SoccaQuiz.</b> Google te demande d'abord la permission de laisser SoccaQuiz créer le site dans ton compte. Touche « Examiner les autorisations », puis choisis ton compte Google. Si un écran « Google n'a pas validé cette application » apparaît, touche <b>Paramètres avancés</b>, puis <b>Accéder à SoccaQuiz</b>. Coche toutes les cases, puis touche « Continuer ».</li>
+<li><b>Active l'interrupteur, si on te le demande.</b> L'installateur peut afficher « Active l'API Apps Script ». Touche alors « Ouvrir la page Google » : une page s'ouvre avec un seul interrupteur, « API Google Apps Script ». Mets-le sur <b>Activé</b>, puis reviens sur la page de l'installateur. Tu ne le feras qu'une fois.</li>
+<li><b>Crée le site.</b> Écris le prénom de ton enfant (ce n'est pas obligatoire) et choisis sa classe, puis touche <b>« Installer mon site »</b>. Attends une trentaine de secondes, sans fermer la page.</li>
+<li><b>Garde les deux boutons qui apparaissent.</b> Le bouton <b>« Site de &lt;prénom&gt; »</b> ouvre le site de révision : c'est celui que tu donneras à ton enfant. Le bouton <b>« Espace parent »</b> est pour toi : c'est là que tu crées les quiz et que tu vois les résultats. Mets les deux en favori.</li>
+<li><b>Ouvre ton espace parent une première fois.</b> Google demande alors une dernière autorisation, pour ton site cette fois. Fais comme à l'étape 2 (Paramètres avancés, Accéder, tout cocher, Continuer). Elle parle de ton Drive, parce que ton site range les quiz et les résultats dans un dossier « SoccaQuiz » de ton Drive. Il ne lit rien d'autre.</li>
 </ol>
-<p class="petit">Tout reste dans ton compte Google : SoccaQuiz ne reçoit ni tes quiz, ni les résultats de ton enfant. Détails dans les <a href="confidentialite.html">règles de confidentialité</a>.</p>
+<p class="petit">SoccaQuiz ne reçoit ni tes quiz, ni les résultats de ton enfant : tout reste dans ton compte Google. Pour en savoir plus, lis les <a href="confidentialite.html">règles de confidentialité</a>.</p>
 </div>
 
 <div class="carte" id="enfant">
-<h2>Le site de l'enfant</h2>
-<ul>
-<li>Envoie-lui son lien avec le bouton <b>« Envoyer le lien à &lt;prénom&gt; »</b> (installateur ou espace parent). Il s'ouvre sans compte : ne le partage qu'avec lui.</li>
-<li>Pour en faire une appli : ouvre le lien sur sa tablette ou son téléphone, puis menu du navigateur → <b>« Ajouter à l'écran d'accueil »</b>.</li>
-<li>Le site s'habille selon la classe (de la maternelle au lycée, et « Pour moi » pour les révisions d'un adulte). La classe monte toute seule chaque 1er septembre ; tu peux la changer dans <b>Espace parent → Réglages</b>.</li>
-<li>Les questions ratées reviennent dans « Pour toi » quelques jours plus tard, pour bien les retenir.</li>
-</ul>
+<h2>Le site de ton enfant</h2>
+<p><b>Envoie-lui son lien.</b> Dans l'installateur ou dans ton espace parent, touche le bouton « Envoyer le lien à &lt;prénom&gt; » : un message prêt à envoyer s'ouvre. Le site s'ouvre sans mot de passe pour toute personne qui a ce lien : ne le donne qu'à ton enfant.</p>
+<p><b>Mets-le sur l'écran d'accueil de sa tablette ou de son téléphone.</b> Ouvre le lien sur son appareil, puis, dans le menu du navigateur (les trois points ou le bouton de partage), choisis « Ajouter à l'écran d'accueil ». Une icône SoccaQuiz apparaît, comme une application.</p>
+<p><b>Le site s'adapte à son âge.</b> Les couleurs, la mascotte et le nombre de questions changent selon la classe, de la maternelle au lycée. La classe passe toute seule à la suivante chaque 1er septembre. Tu peux la changer quand tu veux dans ton espace parent, onglet <b>Réglages</b>.</p>
+<p><b>Il revoit ce qu'il a raté.</b> Les questions ratées reviennent quelques jours plus tard dans la rubrique « Pour toi » de son site, pour bien les retenir.</p>
 </div>
 
 <div class="carte" id="creer">
-<h2>Créer un quiz</h2>
-<p>Dans l'espace parent, touche <b>« Créer un quiz »</b>, puis prends en photo la leçon (une ou plusieurs pages).</p>
-<details open><summary>Avec Gemini : le plus simple</summary>
-<ol>
-<li>Une seule fois : crée une clé gratuite sur <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a>, avec ton compte Google, puis colle-la dans « Créer un quiz ».</li>
-<li>Ensuite, à chaque leçon : les photos, puis <b>« Créer le quiz avec Gemini »</b>. Gemini écrit le quiz, puis relit chaque question.</li>
-</ol>
-<p class="petit">La clé gratuite permet une vingtaine de quiz par jour. Elle reste dans ton site, et seul l'espace parent s'en sert : l'enfant n'y a jamais accès.</p>
+<h2>Créer un quiz à partir d'une leçon</h2>
+<p>Ouvre ton espace parent et touche le bouton rouge <b>« Créer un quiz »</b>. Prends en photo la leçon de ton enfant : une ou plusieurs pages, bien à plat et lisibles. Ensuite, deux façons de faire :</p>
+<details open><summary>Avec Gemini, l'IA gratuite de Google (le plus simple)</summary>
+<p>La première fois seulement, il faut une « clé » Gemini. C'est une sorte de mot de passe qui permet à ton site d'utiliser Gemini, gratuitement. Pour la créer, ouvre <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> avec ton compte Google, touche « Créer une clé API », copie-la, puis colle-la dans la page « Créer un quiz » de ton espace parent.</p>
+<p>Ensuite, à chaque nouvelle leçon : ajoute les photos et touche <b>« Créer le quiz avec Gemini »</b>. Gemini écrit les questions, puis les relit une par une. Le quiz apparaît sur le site de ton enfant en moins d'une minute.</p>
+<p class="petit">La clé gratuite permet de créer une vingtaine de quiz par jour. Elle reste dans ton site, et seul ton espace parent s'en sert : ton enfant n'y a jamais accès.</p>
 </details>
 <details><summary>Avec Claude, ChatGPT ou Grok</summary>
-<ol>
-<li>Touche <b>« Copier les consignes »</b>, colle-les dans l'IA et envoie-les avec les photos de la leçon.</li>
-<li>Copie toute la réponse de l'IA, reviens et touche <b>« Coller et créer le quiz »</b>.</li>
-</ol>
+<p>Si tu utilises déjà une autre IA, touche <b>« Copier les consignes »</b>. Ouvre ton IA, colle les consignes et envoie-les avec les photos de la leçon. Quand elle a répondu, copie toute sa réponse, reviens sur la page « Créer un quiz » et touche <b>« Coller et créer le quiz »</b>.</p>
 </details>
-<details><summary>Sans photo : la bibliothèque</summary>
-<p>L'onglet <b>Bibliothèque</b> de l'espace parent propose des quiz prêts à l'emploi, choisis selon la classe : « Ajouter à mon site ».</p>
+<details><summary>Sans photo : les quiz déjà prêts</summary>
+<p>Dans ton espace parent, l'onglet <b>Bibliothèque</b> propose des quiz préparés par d'autres familles et relus par SoccaQuiz. Ils sont triés selon la classe de ton enfant. Touche « Ajouter à mon site » sur celui qui t'intéresse.</p>
 </details>
-<details><summary>Une erreur dans un quiz ?</summary>
-<p>Dans <b>Résultats</b>, ouvre la partie, puis sous la question : <b>« Corriger moi-même »</b>, ou <b>« Signaler à SoccaQuiz »</b> pour que la correction te soit proposée. L'enfant peut aussi toucher « Signaler une erreur » sous une question à réviser.</p>
+<details><summary>Une question est fausse ou bizarre ?</summary>
+<p>Dans ton espace parent, onglet <b>Résultats</b>, ouvre la partie concernée. Sous la question, touche <b>« Corriger moi-même »</b> pour la réécrire, ou <b>« Signaler à SoccaQuiz »</b> : une correction te sera proposée. Ton enfant peut aussi toucher « Signaler une erreur » sous une question qu'il révise.</p>
 </details>
 </div>
 
 <div class="carte" id="resultats">
 <h2>Suivre les progrès</h2>
-<p>L'onglet <b>Résultats</b> de l'espace parent montre chaque partie : score, durée, notions acquises ou à revoir, et le détail des réponses. Les résultats restent dans un tableau de ton Drive.</p>
+<p>Dans ton espace parent, l'onglet <b>Résultats</b> montre chaque quiz joué par ton enfant : la date, le score, le temps passé, les notions déjà acquises et celles à revoir. Touche une partie pour voir le détail de ses réponses. Les résultats sont gardés dans un tableau de ton Drive, et toi seul y as accès.</p>
 </div>
 
 <div class="carte" id="plusieurs">
 <h2>Plusieurs enfants, deux parents</h2>
-<ul>
-<li><b>Un autre enfant :</b> dans l'installateur, « Créer un autre site ». Chacun a ses quiz, ses résultats et son lien ; l'espace parent permet de passer de l'un à l'autre.</li>
-<li><b>Tes propres révisions :</b> un autre site, avec la classe « Pour moi ».</li>
-<li><b>L'autre parent :</b> Espace parent → Réglages → « Autre parent », avec son adresse Gmail. Il se connecte ensuite avec son propre compte Google.</li>
-</ul>
+<p><b>Tu as un autre enfant ?</b> Ouvre l'installateur avec le même lien qu'au début et touche <b>« Créer un autre site »</b>. Écris son prénom, choisis sa classe, puis touche « Créer ce site ». Chaque enfant a ainsi ses propres quiz, ses propres résultats et son propre lien. Dans ton espace parent, une liste « Enfant » en haut de la page te permet de passer de l'un à l'autre.</p>
+<p><b>Tu veux réviser toi-même ?</b> Crée un autre site de la même façon, en choisissant la classe <b>« Pour moi (révisions d'un adulte) »</b>.</p>
+<p><b>L'autre parent veut suivre aussi ?</b> Dans ton espace parent, ouvre l'onglet <b>Réglages</b>, puis la rubrique <b>« Autre parent »</b>, et écris son adresse Gmail. Un message prêt à lui envoyer s'ouvre, avec le lien de l'espace parent : envoie-le. Il s'y connecte ensuite avec son propre compte Google. Il voit les mêmes enfants, les mêmes quiz et les mêmes résultats que toi.</p>
 </div>
 
 <div class="carte" id="maj">
 <h2>Mettre à jour</h2>
-<p>Quand une nouvelle version sort, un bandeau l'annonce dans l'espace parent : touche <b>« Mettre à jour mon site depuis l'installateur »</b>, puis <b>« Mettre à jour ce site »</b>. L'adresse du site, les quiz et les résultats ne changent pas. Avec plusieurs enfants, l'installateur propose <b>« Tout mettre à jour »</b>.</p>
+<p>SoccaQuiz s'améliore régulièrement. Quand une nouvelle version sort, un bandeau l'annonce en haut de ton espace parent. Touche <b>« Mettre à jour mon site depuis l'installateur »</b> : l'installateur s'ouvre. Touche alors <b>« Mettre à jour ce site »</b> sur la carte de ton enfant. L'adresse du site, les quiz et les résultats ne changent pas. Si tu as plusieurs enfants, le bouton <b>« Tout mettre à jour »</b> met tous les sites à jour d'un coup.</p>
 </div>
 
 <div class="carte" id="supprimer">
 <h2>Supprimer un site, désinstaller</h2>
 <ol>
-<li>Espace parent → <b>Réglages</b> → « Supprimer le site de &lt;prénom&gt; » (ou, dans l'installateur : « Options avancées » → « Supprimer »).</li>
-<li>Coche « Garder ses quiz et ses résultats » si tu veux les conserver, tape le prénom, puis <b>Supprimer</b>.</li>
+<li>Ouvre l'espace parent de l'enfant concerné, puis l'onglet <b>Réglages</b>, et descends jusqu'à la rubrique « Supprimer le site de &lt;prénom&gt; ».</li>
+<li>Si tu veux conserver ses quiz et ses résultats dans ton Drive, coche « Garder ses quiz et ses résultats ». Sinon, ils partent dans la corbeille de ton Drive, où tu peux encore les récupérer pendant 30 jours.</li>
+<li>Pour confirmer, tape son prénom, puis touche <b>Supprimer</b>. Attends quelques secondes.</li>
 </ol>
-<p>Le site et l'espace parent sont désactivés, son programme part à la corbeille et les autres enfants ne sont pas touchés. Quand tu supprimes le dernier site, SoccaQuiz est entièrement désinstallé : il n'a plus aucun accès à ton compte.</p>
-<p class="petit">Pour ne plus rien garder du tout (facultatif) : vide la corbeille du Drive (sinon Google l'efface au bout de 30 jours), supprime ta clé Gemini sur aistudio.google.com/apikey si tu en avais créé une, et remets l'interrupteur « API Google Apps Script » sur Désactivé.</p>
+<p>Le site et l'espace parent de cet enfant ne fonctionnent plus, et ses autres frères et sœurs ne sont pas touchés. Quand tu supprimes le dernier site, SoccaQuiz est entièrement désinstallé : il n'a plus aucun accès à ton compte Google.</p>
+<p class="petit">Si tu ne veux plus rien garder du tout (c'est facultatif) : vide la corbeille de ton Drive, supprime ta clé Gemini sur aistudio.google.com/apikey si tu en avais créé une, et remets l'interrupteur « API Google Apps Script » sur Désactivé.</p>
 </div>
 
 <div class="carte" id="problemes">
 <h2>Problèmes fréquents</h2>
 <details><summary>« Impossible d'ouvrir le fichier », ou une autorisation est refusée</summary>
-<p>Plusieurs comptes Google sont sans doute ouverts dans le navigateur. Ouvre le lien dans une <b>fenêtre de navigation privée</b>, connecte-toi avec le seul compte qui a installé SoccaQuiz, ou déconnecte les autres comptes.</p>
+<p>Cela arrive presque toujours quand plusieurs comptes Google sont ouverts dans le même navigateur (par exemple un compte personnel et un compte de travail) : Google ne sait pas lequel utiliser. Ouvre le lien dans une <b>fenêtre de navigation privée</b> et connecte-toi seulement avec le compte qui a installé SoccaQuiz. Tu peux aussi te déconnecter des autres comptes.</p>
 </details>
 <details><summary>Le site met quelques secondes à s'ouvrir</summary>
-<p>C'est normal à la première ouverture de la journée : Google réveille le site. Les pages suivantes s'ouvrent plus vite.</p>
+<p>C'est normal à la première ouverture de la journée : Google « réveille » le site. Les pages suivantes s'ouvrent plus vite.</p>
 </details>
-<details><summary>Le bouton « Parler » (exercices à dire à voix haute) ne marche pas</summary>
-<p>La reconnaissance vocale n'existe pas dans tous les navigateurs. Elle ne marche pas avec Brave, Firefox, Opera, Edge sur téléphone, ni dans le navigateur intégré d'une appli (un lien ouvert depuis Gmail, par exemple). Ouvre le site dans <b>Chrome</b> sur Android, ou dans <b>Safari</b> sur iPhone et iPad, puis autorise le micro.</p>
+<details><summary>Le bouton « Parler » ne marche pas (exercices à dire à voix haute)</summary>
+<p>Tous les navigateurs ne savent pas écouter la voix. Cela ne marche pas avec Brave, Firefox, Opera, Edge sur téléphone, ni quand le lien s'ouvre à l'intérieur d'une application (par exemple depuis Gmail). Ouvre le site dans <b>Chrome</b> sur un téléphone ou une tablette Android, ou dans <b>Safari</b> sur un iPhone ou un iPad, puis autorise le micro quand on te le demande.</p>
 </details>
-<details><summary>Gemini dit que le quota est atteint</summary>
-<p>La clé gratuite a une limite par jour. Réessaie le lendemain, ou crée ce quiz avec Claude, ChatGPT ou Grok (copier-coller).</p>
+<details><summary>Gemini dit que la limite est atteinte</summary>
+<p>La clé gratuite permet un nombre limité de quiz par jour. Réessaie le lendemain, ou crée ce quiz avec Claude, ChatGPT ou Grok (voir « Créer un quiz »).</p>
 </details>
-<details><summary>Le quiz créé a une question bizarre</summary>
-<p>Corrige-la dans <b>Résultats</b> → la partie → « Corriger moi-même », ou signale-la à SoccaQuiz. Une photo nette et droite, sur laquelle toute la leçon est lisible, donne de meilleurs quiz.</p>
+<details><summary>Le quiz créé contient une question bizarre</summary>
+<p>Corrige-la dans ton espace parent : onglet <b>Résultats</b>, ouvre la partie, puis « Corriger moi-même ». Tu peux aussi la signaler à SoccaQuiz. Pour de meilleurs quiz, prends des photos nettes, bien droites, sur lesquelles toute la leçon se lit.</p>
 </details>
 </div>
 
 <div class="carte" id="demande">
 <h2>Poser une question à SoccaQuiz</h2>
-<p>Décris ce que tu voulais faire et ce qui se passe : SoccaQuiz te répond par mail, à l'adresse indiquée. Depuis l'espace parent, le bouton <b>« ? »</b> en haut à droite remplit ton adresse tout seul.</p>
+<p>Explique ce que tu voulais faire, ce que tu as touché et ce qui s'est passé (un message d'erreur, une page blanche…). SoccaQuiz te répond par mail, à l'adresse que tu indiques. Astuce : depuis ton espace parent, le bouton <b>« ? »</b> en haut à droite remplit ton adresse tout seul.</p>
 <form id="form-aide" novalidate>
 <label for="aide-msg">Ta question</label>
 <textarea id="aide-msg" maxlength="3000" required placeholder="ex. Mon fils ne voit pas le quiz que je viens de créer."></textarea>
@@ -178,7 +170,11 @@ form input:focus,form textarea:focus{outline:3px solid #d4a017;outline-offset:1p
         if (!url) { bouton.disabled = false; return parMail(message); }
         var corps = { type: 'aide', email: email, message: message, origine: origine, piege: document.getElementById('aide-site').value };
         return fetch(url, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(corps) })
-          .then(function () { dire('ok', '✅ Envoyé. SoccaQuiz te répondra par mail à ' + email + '.'); msg.value = ''; msg.disabled = true; mail.disabled = true; })
+          .then(function () {
+            // une seule demande : le formulaire disparaît, seule la confirmation reste
+            [].forEach.call(form.querySelectorAll('label, textarea, input, .piege, p.petit, button'), function (x) { x.hidden = true; x.style.display = 'none'; });
+            dire('ok', '✅ Envoyé. SoccaQuiz te répondra par mail à ' + email + '.');
+          })
           .catch(function () { bouton.disabled = false; dire('ko', "L'envoi n'a pas marché. Réessaie, ou écris à soccaquiz@gmail.com."); });
       });
   });
