@@ -45,11 +45,11 @@ form input:focus,form textarea:focus{outline:3px solid #d4a017;outline-offset:1p
 <p>Tu as besoin d'un compte Google, c'est-à-dire d'une adresse Gmail. Ton enfant, lui, n'a besoin d'aucun compte. L'installation prend environ 5 minutes, depuis un téléphone ou un ordinateur. Elle se fait une seule fois.</p>
 <ol>
 <li><b>Ouvre le lien de l'installateur.</b> Il se trouve dans le mail d'invitation que tu as reçu : clique sur le bouton « Installer SoccaQuiz ».</li>
-<li id="autoriser"><b>Autorise SoccaQuiz.</b> Google te demande d'abord la permission de laisser SoccaQuiz créer le site dans ton compte. Clique sur « Examiner les autorisations », puis choisis ton compte Google. Si un écran « Google n'a pas validé cette application » apparaît, clique sur <b>Paramètres avancés</b>, puis <b>Accéder à SoccaQuiz</b>. Coche toutes les cases, puis clique sur « Continuer ».</li>
+<li id="autoriser"><b>Autorise l'installateur.</b> Google te demande d'abord la permission de laisser SoccaQuiz créer le site dans ton compte. Clique sur « Examiner les autorisations », puis choisis ton compte Google. Si un écran « Google n'a pas validé cette application » apparaît (Google n'a peut-être pas fini de vérifier l'installateur), clique sur <b>Paramètres avancés</b>, puis <b>Accéder à SoccaQuiz</b>. Coche toutes les cases, puis clique sur « Continuer ».</li>
 <li><b>Active l'interrupteur, si on te le demande.</b> L'installateur peut afficher « Active l'API Apps Script ». Clique alors sur « Ouvrir la page Google » : une page s'ouvre avec un seul interrupteur, « API Google Apps Script ». Mets-le sur <b>Activé</b>, puis reviens sur la page de l'installateur. Tu ne le feras qu'une fois.</li>
 <li><b>Crée le site.</b> Écris le prénom de ton enfant (ce n'est pas obligatoire) et choisis sa classe, puis clique sur <b>« Installer mon site »</b>. Attends une trentaine de secondes, sans fermer la page.</li>
-<li><b>Garde les deux boutons qui apparaissent.</b> Le bouton <b>« Site de &lt;prénom&gt; »</b> ouvre le site de révision : c'est celui que tu donneras à ton enfant. Le bouton <b>« Espace parent »</b> est pour toi : c'est là que tu crées les quiz et que tu vois les résultats. Mets les deux en favori.</li>
-<li><b>Ouvre ton espace parent une première fois.</b> Google demande alors une dernière autorisation, pour ton site cette fois. Fais comme à <a href="#autoriser">l'étape 2</a> (Paramètres avancés, Accéder, tout cocher, Continuer). Elle parle de ton Drive, parce que ton site range les quiz et les résultats dans un dossier « SoccaQuiz » de ton Drive. Il ne lit rien d'autre.</li>
+<li id="autoriser-site"><b>Autorise ton site, une seule fois.</b> La page affiche « Dernière étape : autorise ton site ». Clique sur <b>« Ouvrir le programme »</b> : ton programme « SoccaQuiz » s'ouvre dans un nouvel onglet. En haut, clique sur <b>▷ Exécuter</b>, puis sur <b>« Examiner les autorisations »</b>, choisis ton compte, et clique sur <b>« Continuer »</b> (deux fois si Google le redemande). Google n'affiche aucune alerte : ton site ne demande que l'accès aux fichiers qu'il crée lui-même (son dossier « SoccaQuiz » et ses tableaux) et ton adresse e-mail. Ne modifie rien dans le programme.</li>
+<li><b>Reviens sur l'onglet de l'installateur.</b> Au bout de quelques secondes, il affiche tout seul « C'est prêt ! ». Clique sur <b>« 🔒 Ouvrir mon espace parent »</b> : c'est là que tu crées les quiz et que tu vois les résultats. Il s'ouvre sans compte Google, sur cet appareil : ajoute-le à l'écran d'accueil de ton téléphone pour le retrouver. Envoie ensuite son lien à ton enfant (bouton « Envoyer le lien à &lt;prénom&gt; »).</li>
 </ol>
 <p class="petit">SoccaQuiz ne reçoit ni tes quiz, ni les résultats de ton enfant : tout reste dans ton compte Google. Pour en savoir plus, lis les <a href="confidentialite.html">règles de confidentialité</a>.</p>
 </div>
@@ -88,14 +88,15 @@ form input:focus,form textarea:focus{outline:3px solid #d4a017;outline-offset:1p
 
 <div class="carte" id="plusieurs">
 <h2>Plusieurs enfants, deux parents</h2>
-<p><b>Tu as un autre enfant ?</b> Ouvre l'installateur avec le même lien qu'au début et clique sur <b>« Créer un autre site »</b>. Écris son prénom, choisis sa classe, puis clique sur « Créer ce site ». Chaque enfant a ainsi ses propres quiz, ses propres résultats et son propre lien. Dans ton espace parent, une liste « Enfant » en haut de la page te permet de passer de l'un à l'autre.</p>
-<p><b>Tu veux réviser toi-même ?</b> Crée un autre site de la même façon, en choisissant la classe <b>« Pour moi (révisions d'un adulte) »</b>.</p>
-<p><b>L'autre parent veut suivre aussi ?</b> Dans ton espace parent, ouvre l'onglet <b>Réglages</b>, puis la rubrique <b>« Autre parent »</b>, et écris son adresse Gmail. Un message prêt à lui envoyer s'ouvre, avec le lien de l'espace parent : envoie-le. Il s'y connecte ensuite avec son propre compte Google. Il voit les mêmes enfants, les mêmes quiz et les mêmes résultats que toi.</p>
+<p><b>Tu as un autre enfant ?</b> Pas besoin d'une nouvelle installation. Dans ton espace parent, ouvre l'onglet <b>Réglages</b>, rubrique <b>« Enfants de la famille »</b> : écris son prénom et clique sur <b>« Ajouter un enfant »</b>, puis choisis sa classe dans ses Réglages. Chaque enfant a ses propres quiz, ses propres résultats et son propre lien. En haut de l'espace parent, la liste « Enfant : » te permet de passer de l'un à l'autre.</p>
+<p><b>Tu veux réviser toi-même ?</b> Ajoute-toi de la même façon, puis choisis la classe <b>« Pour moi (révisions d'un adulte) »</b>.</p>
+<p><b>L'autre parent veut suivre aussi ?</b> Dans ton espace parent, onglet <b>Réglages</b>, rubrique <b>« Autre parent et appareils »</b>, clique sur <b>« Inviter l'autre parent »</b>. Envoie-lui le lien (bouton « Envoyer par mail », ou copie-le dans un message) : il l'ouvre une fois sur son téléphone, sans compte Google, et voit les mêmes enfants, les mêmes quiz et les mêmes résultats que toi. Le lien ne sert qu'une fois et reste valable 24 heures.</p>
+<p><b>Un nouveau téléphone, ou une tablette en plus ?</b> Même rubrique : <b>« Ouvrir sur un autre de mes appareils »</b>, puis ouvre le lien sur l'autre appareil. Si ton espace parent ne s'ouvre plus nulle part, l'installateur te redonne un lien : carte de ton site, « Options avancées », « Ouvrir l'espace parent sur un autre appareil ». « Retirer » enlève l'accès d'un appareil (perdu, vendu…).</p>
 </div>
 
 <div class="carte" id="maj">
 <h2>Mettre à jour</h2>
-<p>SoccaQuiz s'améliore régulièrement. Quand une nouvelle version sort, un bandeau l'annonce en haut de ton espace parent. Clique sur <b>« Mettre à jour mon site depuis l'installateur »</b> : l'installateur s'ouvre. Clique alors sur <b>« Mettre à jour ce site »</b> sur la carte de ton enfant. L'adresse du site, les quiz et les résultats ne changent pas. Si tu as plusieurs enfants, le bouton <b>« Tout mettre à jour »</b> met tous les sites à jour d'un coup.</p>
+<p>SoccaQuiz s'améliore régulièrement. Quand une nouvelle version sort, un bandeau l'annonce en haut de ton espace parent. Clique sur <b>« Mettre à jour mon site depuis l'installateur »</b> : l'installateur s'ouvre. Clique alors sur <b>« Mettre à jour »</b> sur la carte de ton site. Les adresses, les quiz et les résultats ne changent pas, pour tous tes enfants à la fois.</p>
 </div>
 
 <div class="carte" id="supprimer">
@@ -105,12 +106,15 @@ form input:focus,form textarea:focus{outline:3px solid #d4a017;outline-offset:1p
 <li>Si tu veux conserver ses quiz et ses résultats dans ton Drive, coche « Garder ses quiz et ses résultats ». Sinon, ils partent dans la corbeille de ton Drive, où tu peux encore les récupérer pendant 30 jours.</li>
 <li>Pour confirmer, tape son prénom, puis clique sur <b>Supprimer</b>. Attends quelques secondes.</li>
 </ol>
-<p>Le site et l'espace parent de cet enfant ne fonctionnent plus, et ses autres frères et sœurs ne sont pas touchés. Quand tu supprimes le dernier site, SoccaQuiz est entièrement désinstallé : il n'a plus aucun accès à ton compte Google.</p>
+<p>Le lien de cet enfant ne fonctionne plus, et ses frères et sœurs ne sont pas touchés. Quand tu supprimes le dernier enfant, SoccaQuiz est entièrement désinstallé : il n'a plus aucun accès à ton compte Google. Il reste seulement un programme « SoccaQuiz » vide sur <a href="https://script.google.com">script.google.com</a>, que tu peux mettre à la corbeille (⋮ → Supprimer).</p>
 <p class="petit">Si tu ne veux plus rien garder du tout (c'est facultatif) : vide la corbeille de ton Drive, supprime ta clé Gemini sur aistudio.google.com/apikey si tu en avais créé une, et remets l'interrupteur « API Google Apps Script » sur Désactivé.</p>
 </div>
 
 <div class="carte" id="problemes">
 <h2>Problèmes fréquents</h2>
+<details><summary>L'espace parent demande « Colle ici ton lien d'invitation »</summary>
+<p>Cet appareil n'est pas (ou plus) reconnu : le lien a peut-être été ouvert dans l'application qui l'a reçu (messagerie, mail…), qui ne garde rien une fois fermée. Ouvre l'espace parent sur un appareil déjà reconnu, onglet <b>Réglages</b>, rubrique « Autre parent et appareils », puis <b>« Ouvrir sur un autre de mes appareils »</b> ; ou, dans l'installateur, « Ouvrir l'espace parent sur un autre appareil ». Copie le nouveau lien, ouvre <b>Chrome</b> (ou Safari sur iPhone), colle-le dans la barre d'adresse ou dans le champ de la page. Puis ajoute la page à l'écran d'accueil.</p>
+</details>
 <details><summary>« Impossible d'ouvrir le fichier », ou une autorisation est refusée</summary>
 <p>Cela arrive presque toujours quand plusieurs comptes Google sont ouverts dans le même navigateur (par exemple un compte personnel et un compte de travail) : Google ne sait pas lequel utiliser. Ouvre le lien dans une <b>fenêtre de navigation privée</b> et connecte-toi seulement avec le compte qui a installé SoccaQuiz. Tu peux aussi te déconnecter des autres comptes.</p>
 </details>
