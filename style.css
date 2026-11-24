@@ -7,3 +7,6 @@ table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.95em}
 th,td{border:1px solid #e3d6c3;padding:8px 10px;text-align:left;vertical-align:top}
 th{background:#fbf3e6}
 code{font-size:.85em;word-break:break-all}
+.btn{display:inline-block;font:600 1.05rem system-ui,sans-serif;border:none;border-radius:999px;padding:13px 30px;cursor:pointer;background:#c8102e;color:#fff;text-decoration:none;margin:6px 0}
+.btn:hover{background:#a50d26}
+.centre{text-align:center}

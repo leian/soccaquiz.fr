@@ -4,39 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SoccaQuiz — des quiz de révision à partir d'une photo de leçon</title>
+<meta name="description" content="SoccaQuiz : un parent photographie la leçon, une IA en fait un quiz, l'enfant révise sur téléphone, tablette ou ordinateur. Gratuit, non commercial, sans publicité. Les quiz et les résultats restent dans le Google Drive de la famille.">
 <link rel="icon" href="icone.png">
 <link rel="canonical" href="https://soccaquiz.fr/">
 <link rel="stylesheet" href="style.css">
 </head>
 <body><main>
 <h1><img src="logo-120.png" width="64" height="64" alt="Logo SoccaQuiz" style="vertical-align:middle;border-radius:14px"> Socca<span style="color:#b3001b">Quiz</span></h1>
-<p><b>SoccaQuiz</b> est un site de quiz de révision gratuit et non commercial, que chaque famille installe et met à jour avec l'installateur en ligne SoccaQuiz.</p>
-<p>Des quiz de révision créés à partir d'une photo de leçon. Un parent photographie la leçon, une IA (Gemini, Claude, ChatGPT…) en fait un quiz, et l'enfant révise sur téléphone, tablette ou ordinateur.</p>
+<p><b>Des quiz de révision créés à partir d'une photo de leçon.</b> Le parent photographie la leçon, une IA (Gemini, Claude, ChatGPT…) en fait un quiz, et l'enfant révise sur téléphone, tablette ou ordinateur.</p>
+<p>SoccaQuiz est gratuit, non commercial et sans publicité. Les quiz et les résultats restent dans le Google Drive de la famille.</p>
+<p class="centre"><a class="btn" href="https://app.soccaquiz.fr/connexion/">Commencer</a><br><span class="petit">Il faut un compte Google (celui du parent). Ça prend une minute, depuis un téléphone, une tablette ou un ordinateur.</span></p>
+
 <div class="carte">
 <h2>Comment ça marche</h2>
 <ol>
-<li>Chaque famille installe son propre site SoccaQuiz dans <b>son propre compte Google</b> (Google Apps Script), gratuitement.</li>
-<li>Un seul site pour toute la famille : pour chaque enfant, les quiz et les résultats sont rangés dans un dossier Drive « SoccaQuiz », dans des Google Sheets. Le site ne peut voir que les fichiers qu'il a créés lui-même.</li>
-<li>L'enfant ouvre l'adresse de <b>son site</b> : aucun compte n'est nécessaire pour jouer, et il n'y voit que les quiz.</li>
-<li>Le parent utilise l'<b>espace parent</b>, ouvert seulement sur les appareils qu'il a choisis (un lien d'invitation par appareil, sans compte Google) : ajout et gestion des quiz, suivi des résultats et des progrès, autres enfants, autre parent.</li>
+<li><b>Le parent s'inscrit avec son compte Google</b> : il écrit le prénom de l'enfant, choisit sa classe, puis clique sur « Commencer avec Google ». SoccaQuiz demande seulement l'accès <b>aux fichiers qu'il crée lui-même</b> dans le Drive : il ne voit aucun autre fichier, ni les e-mails, ni les contacts. Rien à installer, aucune alerte de Google.</li>
+<li><b>Les quiz et les résultats sont rangés dans le Drive du parent</b>, dans un dossier « SoccaQuiz ».</li>
+<li><b>L'enfant ouvre le lien de son site</b> : aucun compte n'est nécessaire pour jouer, et il n'y voit que ses quiz.</li>
+<li><b>Le parent utilise l'espace parent</b> pour créer des quiz, suivre les résultats et les progrès, ajouter un autre enfant ou inviter l'autre parent. L'espace parent ne s'ouvre que sur les appareils qu'il a choisis.</li>
 </ol>
+<p>Tout le détail : <a href="aide.html">l'aide</a> et les <a href="confidentialite.html">règles de confidentialité</a>.</p>
 </div>
-<div class="carte">
-<h2>L'installateur en ligne</h2>
-<p>L'installateur en ligne SoccaQuiz est une application Google Apps Script qui s'exécute au nom du parent qui l'ouvre, avec son autorisation. C'est pour cela qu'il demande à <b>gérer les projets Apps Script et leurs publications</b>, et à se connecter à un service externe :</p>
-<ul>
-<li>il crée dans le compte Google du parent un projet Apps Script « SoccaQuiz », un seul pour toute la famille ;</li>
-<li>il y copie le moteur de quiz, lu dans la publication publique du code source sur GitHub ;</li>
-<li>il publie ce projet à une adresse ; le parent l'autorise ensuite lui-même, une fois, dans l'éditeur de Google Apps Script ;</li>
-<li>il met à jour cette publication quand le parent touche « Mettre à jour », et la désactive (en vidant le code du projet) quand il supprime SoccaQuiz.</li>
-</ul>
-<p>Il ne lit aucune autre donnée : ni le Drive, ni les e-mails, ni les contacts, ni les autres projets. Il garde seulement, pour proposer les mises à jour, la liste des sites créés (prénom facultatif, classe, adresses), effaçable à tout moment depuis l'installateur. Détails dans les <a href="confidentialite.html">règles de confidentialité</a>.</p>
-</div>
+
 <div class="carte" lang="en">
 <h2>In English</h2>
-<p><b>SoccaQuiz</b> is a free, non-commercial study-quiz website. A parent photographs a school lesson, an AI turns it into a quiz, and the child reviews on a phone, tablet or computer. Each family installs its own SoccaQuiz site in <b>its own Google Account</b> with the SoccaQuiz online installer, a Google Apps Script web app that runs as the parent. The installer only creates and updates the family's SoccaQuiz Apps Script projects and their deployments (scopes <code>script.projects</code>, <code>script.deployments</code>, <code>script.external_request</code> to download the public engine code from GitHub). It does not read Drive files, emails or contacts, and no personal data is sent to the developer (only anonymous install/update/deletion counters). See the <a href="confidentialite.html#en">Privacy Policy</a>.</p>
+<p><b>SoccaQuiz</b> is a free, non-commercial study-quiz website, with no advertising. A parent photographs a school lesson, an AI turns it into a quiz, and the child reviews on a phone, tablet or computer. The parent signs in with Google (“Commencer avec Google”); SoccaQuiz only requests the <code>drive.file</code> scope, i.e. access to the files SoccaQuiz itself creates in the parent's Google Drive (a “SoccaQuiz” folder holding the family's quizzes and results). It does not read other Drive files, emails or contacts, and no data is sold or shared. See the <a href="confidentialite.html#en">Privacy Policy</a>.</p>
+<p><a class="btn" href="https://app.soccaquiz.fr/connexion/">Get started</a></p>
 </div>
-<p>L'installation se fait avec le lien de l'installateur en ligne SoccaQuiz, transmis par la personne qui vous a présenté SoccaQuiz. Elle se fait depuis un téléphone, une tablette ou un ordinateur.</p>
+
+<p class="petit">Première version (jusqu'en novembre 2026) : les sites créés avec « l'installateur en ligne SoccaQuiz » (Google Apps Script) ne reçoivent plus de nouveautés et cet installateur va être retiré. Voir <a href="aide.html#installer">l'aide</a> pour passer à la nouvelle version.</p>
 <p><a href="aide.html">Aide</a> · <a href="confidentialite.html">Règles de confidentialité</a> · <a href="https://github.com/leian/UNIVERSALQUIZ">Code source</a> · Contact : soccaquiz@gmail.com</p>
 <p class="petit">Licence PolyForm Noncommercial 1.0.0 : usage commercial interdit. Copyright 2026 leian.</p>
 </main></body>
