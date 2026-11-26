@@ -22,11 +22,14 @@ form input:focus,form textarea:focus{outline:3px solid #d4a017;outline-offset:1p
 .piege{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .ok{border-left:5px solid #15803d;background:#ecfdf3;border-radius:10px;padding:10px 14px}
 .ko{border-left:5px solid #b91c1c;background:#fef2f2;border-radius:10px;padding:10px 14px}
+.ouvrir{display:inline-block;margin-left:4px;padding:1px 10px;border-radius:999px;background:#fdecee;color:#a9010d;font-weight:600;font-size:.9em;text-decoration:none;white-space:nowrap}
+.ouvrir:hover{background:#fbd5da}
 </style>
 </head>
 <body><main>
 <h1><img src="logo-120.png" width="56" height="56" alt="" style="vertical-align:middle;border-radius:14px"> Aide de Socca<span style="color:#b3001b">Quiz</span></h1>
 <p>SoccaQuiz transforme une leçon que ton enfant a en photo en un petit jeu de questions pour réviser. Les quiz et les résultats sont gardés dans ton propre Google Drive, dans un dossier « SoccaQuiz » : c'est gratuit, SoccaQuiz ne touche à aucun autre fichier, et personne d'autre que toi n'y a accès. Cette page explique chaque étape simplement. Si tu restes bloqué, <a href="#demande">pose ta question en bas de la page</a> : SoccaQuiz te répond par mail.</p>
+<p class="petit">Les boutons <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#reglages" target="_blank" rel="noopener">Ouvrir ↗</a> t'amènent directement au bon endroit de ton espace parent, sur le téléphone ou l'ordinateur où tu l'utilises déjà.</p>
 
 <ul class="sommaire">
 <li><a href="#installer">Installer SoccaQuiz</a></li>
@@ -54,24 +57,24 @@ form input:focus,form textarea:focus{outline:3px solid #d4a017;outline-offset:1p
 
 <div class="carte" id="enfant">
 <h2>Le site de ton enfant</h2>
-<p><b>Envoie-lui son lien.</b> Dans ton espace parent, clique sur <b>« Envoyer le lien à &lt;prénom&gt; »</b> : un message prêt à envoyer s'ouvre. Le site s'ouvre sans mot de passe pour toute personne qui a ce lien : ne le donne qu'à ton enfant.</p>
+<p><b>Envoie-lui son lien.</b> Dans ton espace parent, clique sur <b>« Envoyer le lien à &lt;prénom&gt; »</b> : un message prêt à envoyer s'ouvre. Le site s'ouvre sans mot de passe pour toute personne qui a ce lien : ne le donne qu'à ton enfant. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#reglages/partager" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 <p><b>Mets-le sur l'écran d'accueil de sa tablette ou de son téléphone.</b> Ouvre le lien sur son appareil, puis, dans le menu du navigateur (les trois points ou le bouton de partage), choisis « Ajouter à l'écran d'accueil » ou « Installer l'application ». Une icône SoccaQuiz apparaît, comme une application. <b>Plusieurs enfants sur la même tablette ?</b> Une seule icône suffit : ouvre le lien de chacun une fois sur cet appareil ; ensuite, en cliquant sur l'icône, SoccaQuiz demande « Qui révise ? ».</p>
-<p><b>Le site s'adapte à son âge.</b> Les couleurs, la mascotte et le nombre de questions changent selon la classe, de la maternelle au lycée. La classe passe toute seule à la suivante chaque 1er septembre. Dans ton espace parent, onglet <b>Réglages</b>, tu peux changer la classe, la tenue de la mascotte au lycée et son allure (au féminin, au masculin ou neutre) : l'image à côté montre tout de suite la mascotte que verra ton enfant.</p>
-<p><b>Combien de questions par partie ?</b> Par défaut, c'est automatique selon l'âge : 8 en maternelle, 10 au CP et au CE1, 20 ensuite. Tu peux choisir 10, 15, 20 ou 30 dans <b>Réglages</b> → <b>« Questions par partie »</b>, pour tous les quiz de cet enfant. Des parties courtes et fréquentes font mieux retenir qu'une longue partie de temps en temps. À chaque partie, les questions sont tirées dans tout le quiz, en reposant plus souvent celles qui ont été ratées ; un quiz qui a moins de questions les pose toutes.</p>
+<p><b>Le site s'adapte à son âge.</b> Les couleurs, la mascotte et le nombre de questions changent selon la classe, de la maternelle au lycée. La classe passe toute seule à la suivante chaque 1er septembre. Dans ton espace parent, onglet <b>Réglages</b>, tu peux changer la classe, la tenue de la mascotte au lycée et son allure (au féminin, au masculin ou neutre) : l'image à côté montre tout de suite la mascotte que verra ton enfant. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#reglages/classe" target="_blank" rel="noopener">Ouvrir ↗</a></p>
+<p><b>Combien de questions par partie ?</b> Par défaut, c'est automatique selon l'âge : 8 en maternelle, 10 au CP et au CE1, 20 ensuite. Tu peux choisir 10, 15, 20 ou 30 dans <b>Réglages</b> → <b>« Questions par partie »</b>, pour tous les quiz de cet enfant. Des parties courtes et fréquentes font mieux retenir qu'une longue partie de temps en temps. À chaque partie, les questions sont tirées dans tout le quiz, en reposant plus souvent celles qui ont été ratées ; un quiz qui a moins de questions les pose toutes. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#reglages/questions" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 <p><b>Il revoit ce qu'il a raté.</b> Les questions ratées reviennent quelques jours plus tard dans la rubrique « Pour toi » de son site, pour bien les retenir.</p>
 <p><b>Pendant un quiz</b>, cliquer sur le logo SoccaQuiz ou le lien « Espace parent » demande d'abord « Quitter le quiz ? », pour ne pas perdre la partie par erreur.</p>
 </div>
 
 <div class="carte" id="creer">
 <h2>Créer un quiz à partir d'une leçon</h2>
-<p>Ouvre ton espace parent et clique sur <b>« Créer un quiz »</b> (sur téléphone : le gros bouton <b>+</b> en bas de l'écran). Prends en photo la leçon de ton enfant : une ou plusieurs pages, bien à plat et lisibles. Ensuite, deux façons de faire :</p>
+<p>Ouvre ton espace parent et clique sur <b>« Créer un quiz »</b> (sur téléphone : le gros bouton <b>+</b> en bas de l'écran). Prends en photo la leçon de ton enfant : une ou plusieurs pages, bien à plat et lisibles. Ensuite, deux façons de faire : <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#ajouter" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 <details open><summary>Avec Gemini, l'IA gratuite de Google (le plus simple)</summary>
-<p>La première fois seulement, il faut une « clé » Gemini : une sorte de mot de passe qui permet à ton site d'utiliser Gemini, gratuitement. Sur la page « Créer un quiz », clique sur <b>« 🔑 Obtenir ma clé Gemini »</b> : la page de Google s'ouvre, crée la clé et copie-la. Reviens, puis clique sur <b>« 📋 Coller ma clé »</b>.</p>
+<p>La première fois seulement, il faut une « clé » Gemini : une sorte de mot de passe qui permet à ton site d'utiliser Gemini, gratuitement. Sur la page « Créer un quiz », clique sur <b>« 🔑 Obtenir ma clé Gemini »</b> : la page de Google s'ouvre, crée la clé et copie-la. Reviens, puis clique sur <b>« 📋 Coller ma clé »</b>. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#ajouter/gemini" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 <p>Ensuite, à chaque nouvelle leçon : ajoute les photos et clique sur <b>« Créer le quiz avec Gemini »</b>. Gemini écrit les questions, puis les relit une par une. Le quiz apparaît sur le site de ton enfant en moins d'une minute.</p>
 <p class="petit">La clé gratuite permet de créer une vingtaine de quiz par jour. Elle est gardée chiffrée, et seul ton espace parent s'en sert : ton enfant n'y a jamais accès.</p>
 </details>
 <details><summary>Avec Claude, ChatGPT, Mistral ou Grok</summary>
-<p>Sur la page « Créer un quiz », partie <b>« Ou avec une autre IA »</b>, en trois temps :</p>
+<p>Sur la page « Créer un quiz », partie <b>« Ou avec une autre IA »</b>, en trois temps : <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#ajouter/autre-ia" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 <ol>
 <li><b>Ouvre une IA</b> : clique sur <b>Claude</b>, <b>ChatGPT</b>, <b>Mistral</b> ou <b>Grok</b>. La demande est déjà écrite : joins les photos de la leçon (📎 ou +) et envoie.</li>
 <li><b>Copie sa réponse</b> : l'IA répond par un bloc de texte (le quiz). Pas besoin de le lire : clique sur la petite icône « copier » (deux carrés) en haut à droite du bloc.</li>
@@ -86,25 +89,25 @@ form input:focus,form textarea:focus{outline:3px solid #d4a017;outline-offset:1p
 <p>Pour une leçon avec un schéma (sciences, géographie…), l'IA peut dessiner un schéma simple et poser des questions dessus : <b>cliquer sur la bonne zone</b>, ou <b>légender</b> (choisir une étiquette, puis cliquer sur l'endroit où elle va). Si un schéma est raté, corrige ou retire la question (voir ci-dessous).</p>
 </details>
 <details><summary>Sans photo : les quiz déjà prêts</summary>
-<p>Dans ton espace parent, l'onglet <b>Bibliothèque</b> propose des quiz préparés par d'autres familles et relus par SoccaQuiz. Ils sont triés selon la classe de ton enfant. Clique sur « Ajouter à mon site » sur celui qui t'intéresse.</p>
+<p>Dans ton espace parent, l'onglet <b>Bibliothèque</b> propose des quiz préparés par d'autres familles et relus par SoccaQuiz. Ils sont triés selon la classe de ton enfant. Clique sur « Ajouter à mon site » sur celui qui t'intéresse. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#bibliotheque" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 </details>
 <details><summary>Une question est fausse ou bizarre ?</summary>
-<p>Dans ton espace parent, onglet <b>Résultats</b>, ouvre la partie concernée. Sous la question, clique sur <b>« Corriger moi-même »</b> pour la réécrire, ou <b>« Signaler à SoccaQuiz »</b> : une correction te sera proposée. Ton enfant peut aussi cliquer sur « Signaler une erreur » sous une question qu'il révise.</p>
+<p>Dans ton espace parent, onglet <b>Résultats</b>, ouvre la partie concernée. Sous la question, clique sur <b>« Corriger moi-même »</b> pour la réécrire, ou <b>« Signaler à SoccaQuiz »</b> : une correction te sera proposée. Ton enfant peut aussi cliquer sur « Signaler une erreur » sous une question qu'il révise. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#resultats" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 </details>
 </div>
 
 <div class="carte" id="resultats">
 <h2>Suivre les progrès</h2>
-<p>Dans ton espace parent, l'onglet <b>Résultats</b> montre chaque quiz joué par ton enfant : la date, le score, le temps passé, les notions déjà acquises et celles à revoir. Clique sur une partie pour voir le détail de ses réponses. Les résultats sont gardés dans un tableau de ton Drive, et toi seul y as accès.</p>
+<p>Dans ton espace parent, l'onglet <b>Résultats</b> montre chaque quiz joué par ton enfant : la date, le score, le temps passé, les notions déjà acquises et celles à revoir. Clique sur une partie pour voir le détail de ses réponses. Les résultats sont gardés dans un tableau de ton Drive, et toi seul y as accès. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#resultats" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 </div>
 
 <div class="carte" id="plusieurs">
 <h2>Plusieurs enfants, deux parents, appareils</h2>
-<p><b>Tu as un autre enfant ?</b> Pas besoin d'une nouvelle installation. Dans ton espace parent, onglet <b>Réglages</b>, rubrique <b>« Enfants de la famille »</b> : écris son prénom, choisis sa classe, puis clique sur <b>« Ajouter un enfant »</b>. Tu peux aussi repasser par <a href="https://app.soccaquiz.fr/connexion/">la page d'installation</a> avec son prénom et le même compte Google : il est ajouté à ta famille. Chaque enfant a ses propres quiz, ses propres résultats et son propre lien. En haut de l'espace parent, le menu avec le prénom (« ● Lana CM1 ▾ ») permet de passer de l'un à l'autre ; le point montre l'enfant affiché. Un enfant que tu viens d'ajouter y apparaît tout de suite.</p>
-<p><b>Le même quiz pour plusieurs enfants ?</b> Au moment de le créer, coche « Ajouter aussi pour… » (voir <a href="#creer">Créer un quiz</a>). Pour un quiz déjà créé : onglet <b>Quiz</b>, clique sur <b>« Partager »</b> à côté du quiz, coche les enfants, puis clique sur <b>« Partager »</b>. Le quiz est copié sur leur site : mêmes questions, mais chacun garde ses propres résultats. Un enfant qui a déjà un quiz du même titre est passé.</p>
+<p><b>Tu as un autre enfant ?</b> Pas besoin d'une nouvelle installation. Dans ton espace parent, onglet <b>Réglages</b>, rubrique <b>« Enfants de la famille »</b> : écris son prénom, choisis sa classe, puis clique sur <b>« Ajouter un enfant »</b>. Tu peux aussi repasser par <a href="https://app.soccaquiz.fr/connexion/">la page d'installation</a> avec son prénom et le même compte Google : il est ajouté à ta famille. Chaque enfant a ses propres quiz, ses propres résultats et son propre lien. En haut de l'espace parent, le menu avec le prénom (« ● Lana CM1 ▾ ») permet de passer de l'un à l'autre ; le point montre l'enfant affiché. Un enfant que tu viens d'ajouter y apparaît tout de suite. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#reglages/enfants" target="_blank" rel="noopener">Ouvrir ↗</a></p>
+<p><b>Le même quiz pour plusieurs enfants ?</b> Au moment de le créer, coche « Ajouter aussi pour… » (voir <a href="#creer">Créer un quiz</a>). Pour un quiz déjà créé : onglet <b>Quiz</b>, clique sur <b>« Partager »</b> à côté du quiz, coche les enfants, puis clique sur <b>« Partager »</b>. Le quiz est copié sur leur site : mêmes questions, mais chacun garde ses propres résultats. Un enfant qui a déjà un quiz du même titre est passé. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#quiz" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 <p><b>Un prénom à corriger ?</b> Même rubrique : « Renommer &lt;prénom&gt; ». Ses quiz et ses résultats ne bougent pas.</p>
 <p><b>Tu veux réviser toi-même ?</b> Ajoute-toi de la même façon, avec la classe <b>« Pour moi (révisions d'un adulte) »</b>.</p>
-<p><b>L'autre parent veut suivre aussi ?</b> Onglet <b>Réglages</b>, rubrique <b>« Autre parent et appareils »</b>, clique sur <b>« Inviter l'autre parent »</b>. Envoie-lui le lien (par mail ou dans un message) : il l'ouvre une fois sur son téléphone, sans compte Google, et voit les mêmes enfants, les mêmes quiz et les mêmes résultats que toi. Le lien ne sert qu'une fois et reste valable 24 heures.</p>
+<p><b>L'autre parent veut suivre aussi ?</b> Onglet <b>Réglages</b>, rubrique <b>« Autre parent et appareils »</b>, clique sur <b>« Inviter l'autre parent »</b>. Envoie-lui le lien (par mail ou dans un message) : il l'ouvre une fois sur son téléphone, sans compte Google, et voit les mêmes enfants, les mêmes quiz et les mêmes résultats que toi. Le lien ne sert qu'une fois et reste valable 24 heures. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#reglages/parents" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 <p><b>Un nouveau téléphone, ou une tablette en plus ?</b> Le plus simple : ouvre <a href="https://app.soccaquiz.fr/parent/">app.soccaquiz.fr/parent</a> sur l'autre appareil et clique sur <b>« Me connecter avec Google »</b>, avec le compte qui a installé SoccaQuiz. Ou, depuis un appareil déjà reconnu : <b>« Ouvrir sur un autre de mes appareils »</b>, puis ouvre le lien sur l'autre appareil.</p>
 <p><b>La liste des appareils</b> (même rubrique) montre chaque appareil qui ouvre ton espace parent, avec un nom donné automatiquement (par exemple « Téléphone Android · Chrome »). « Renommer » lui donne un nom plus parlant ; « Retirer » enlève son accès (appareil perdu, vendu…).</p>
 </div>
@@ -117,7 +120,7 @@ form input:focus,form textarea:focus{outline:3px solid #d4a017;outline-offset:1p
 
 <div class="carte" id="supprimer">
 <h2>Remettre à zéro, supprimer un enfant, désinstaller</h2>
-<p>Tout se passe dans un seul encadré : dans ton espace parent, choisis l'enfant concerné, ouvre l'onglet <b>Réglages</b> et descends jusqu'à <b>« Remettre à zéro ou supprimer &lt;prénom&gt; »</b>.</p>
+<p>Tout se passe dans un seul encadré : dans ton espace parent, choisis l'enfant concerné, ouvre l'onglet <b>Réglages</b> et descends jusqu'à <b>« Remettre à zéro ou supprimer &lt;prénom&gt; »</b>. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#reglages/supprimer" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 <ol>
 <li>Coche ce que tu veux effacer :
 <ul>
@@ -151,7 +154,7 @@ form input:focus,form textarea:focus{outline:3px solid #d4a017;outline-offset:1p
 <p>La clé gratuite permet un nombre limité de quiz par jour, et Gemini est parfois très demandé. Réessaie un peu plus tard ou le lendemain, ou crée ce quiz avec Claude, ChatGPT, Mistral ou Grok (voir <a href="#creer">Créer un quiz à partir d'une leçon</a>).</p>
 </details>
 <details><summary>Le quiz créé contient une question bizarre</summary>
-<p>Corrige-la dans ton espace parent : onglet <b>Résultats</b>, ouvre la partie, puis « Corriger moi-même ». Tu peux aussi la signaler à SoccaQuiz. Pour de meilleurs quiz, prends des photos nettes, bien droites, sur lesquelles toute la leçon se lit.</p>
+<p>Corrige-la dans ton espace parent : onglet <b>Résultats</b>, ouvre la partie, puis « Corriger moi-même ». Tu peux aussi la signaler à SoccaQuiz. Pour de meilleurs quiz, prends des photos nettes, bien droites, sur lesquelles toute la leçon se lit. <a class="ouvrir" href="https://app.soccaquiz.fr/parent/#resultats" target="_blank" rel="noopener">Ouvrir ↗</a></p>
 </details>
 </div>
 
